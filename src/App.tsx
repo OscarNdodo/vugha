@@ -31,11 +31,18 @@ export default function App() {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-[#d84506] to-orange-400 bg-clip-text text-transparent">Vugha</h1>
           </div>
 
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 items-center">
             <a href="#" className="text-gray-700 hover:text-[#d84506] font-medium transition-colors duration-200">Home</a>
-            <a href="#" className="text-gray-700 hover:text-[#d84506] font-medium transition-colors duration-200">Funcionalidades</a>
             <a href="#" className="text-gray-700 hover:text-[#d84506] font-medium transition-colors duration-200">Sobre</a>
             <a href="#" className="text-gray-700 hover:text-[#d84506] font-medium transition-colors duration-200">Contato</a>
+            <a href="#" className="hover:bg-[#d84506] hover:text-white font-medium transition-colors duration-200 border bg-white drop-shadow-sm ease-in-out  border-[#f56122] text-[#f56122] px-10 rounded-md py-1">
+              <div className='flex items-center justify-between'>
+                <span>Sign In</span>
+                <svg className="w-4 h-4 text-[#d845060] ml-2 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+            </a>
           </nav>
 
           <button className="md:hidden text-gray-700">
@@ -50,10 +57,10 @@ export default function App() {
       <main className="flex-1 flex items-center justify-center px-6 pt-32 pb-16">
         <div className="container mx-auto max-w-5xl text-center">
           <div className="mb-8 inline-block px-4 py-2 bg-orange-100 rounded-full">
-            <span className="text-xs font-semibold text-[#d84506]">NOVO LANÇAMENTO</span>
+            <span className="text-xs font-semibold text-[#d84506]">PRE-LANÇAMENTO</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6 animate-fadeIn">
+          <h1 className="text-4xl md:text-6xl mulish-black w-full font-bold text-gray-900 leading-tight mb-6 animate-fadeIn">
             Explore repositórios GitHub <br className="hidden md:block" />
             <span className="relative">
               como na Google
