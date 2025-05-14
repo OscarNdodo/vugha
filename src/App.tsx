@@ -4,6 +4,7 @@ import './App.css';
 import { UsersSection } from './components/UsersSection';
 import Footer from './components/Footer';
 import { FeedbackSection } from './components/FeedbackSection';
+import { AutoFeedback } from './components/AutoFeedback';
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,12 +31,12 @@ export default function App() {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-[#d84506] to-orange-400 bg-clip-text text-transparent">Vugha</h1>
           </div>
 
-          {/* <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8">
             <a href="#" className="text-gray-700 hover:text-[#d84506] font-medium transition-colors duration-200">Home</a>
             <a href="#" className="text-gray-700 hover:text-[#d84506] font-medium transition-colors duration-200">Funcionalidades</a>
             <a href="#" className="text-gray-700 hover:text-[#d84506] font-medium transition-colors duration-200">Sobre</a>
             <a href="#" className="text-gray-700 hover:text-[#d84506] font-medium transition-colors duration-200">Contato</a>
-          </nav> */}
+          </nav>
 
           <button className="md:hidden text-gray-700">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,9 +114,10 @@ export default function App() {
 
       <RepoCarousel />
 
-      <UsersSection />
+      {/* <UsersSection /> */}
 
-      <FeedbackSection />
+
+      <AutoFeedback />
 
       {/* FOOTER - Mais completo */}
       <Footer />

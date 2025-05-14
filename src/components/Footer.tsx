@@ -1,6 +1,8 @@
+import FeedbackForm from "./FeebackForm";
+
 export default function Footer() {
     return (
-        < footer className="bg-white border-t border-gray-100 py-12" >
+        < footer className="bg-white border-t border-gray-100 py-20" >
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
@@ -26,7 +28,7 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
-
+                    {/* 
                     <div>
                         <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Produto</h3>
                         <ul className="space-y-2">
@@ -35,7 +37,7 @@ export default function Footer() {
                             <li><a href="#" className="text-gray-500 hover:text-[#d84506] transition-colors">API</a></li>
                             <li><a href="#" className="text-gray-500 hover:text-[#d84506] transition-colors">Documentação</a></li>
                         </ul>
-                    </div>
+                    </div> */}
 
                     <div>
                         <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Empresa</h3>
@@ -54,6 +56,11 @@ export default function Footer() {
                             <li><a href="#" className="text-gray-500 hover:text-[#d84506] transition-colors">Termos</a></li>
                             <li><a href="#" className="text-gray-500 hover:text-[#d84506] transition-colors">Segurança</a></li>
                         </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">O que voce achou?</h3>
+                        <FeedbackForm />
                     </div>
                 </div>
 
